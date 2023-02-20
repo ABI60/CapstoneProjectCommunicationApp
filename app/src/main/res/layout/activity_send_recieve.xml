@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        tools:context=".SendReceiveActivity">
+
+        <Button
+            android:id="@+id/clearLogsBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="212dp"
+            android:text="Clear Logs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/logText"
+            android:layout_width="0dp"
+
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="bottom"
+            android:outlineProvider="none"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:text="***Waiting for connection.***"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/clearLogsBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logLine"
+            app:layout_constraintTop_toBottomOf="@+id/logsHd"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/logsHd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Logs..."
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logLine"
+            android:layout_width="3dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/logText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/logText"
+            app:srcCompat="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/bottomCut1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clearLogsBtn"
+            app:srcCompat="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/bottomCut2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clearLogsBtn"
+            app:srcCompat="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/bottomCut3"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/verticalCut1"
+            app:srcCompat="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/verticalCut1"
+            android:layout_width="2dp"
+            android:layout_height="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottomCut2"
+            app:srcCompat="@android:color/black" />
+
+        <TextView
+            android:id="@+id/connectedDeviceText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:text="(Connected to: )"
+            app:layout_constraintBottom_toBottomOf="@+id/logsHd"
+            app:layout_constraintStart_toEndOf="@+id/logsHd"
+            app:layout_constraintTop_toTopOf="@+id/logsHd" />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#86037ED1"
+            android:text="STOP"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/startBtn" />
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#86037ED1"
+            android:text="START"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottomCut3" />
+
+        <TextView
+            android:id="@+id/batteryVoltageHd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Battery Voltage:"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottomCut1" />
+
+        <TextView
+            android:id="@+id/batteryVoltageTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="-,-V"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/batteryVoltageHd"
+            app:layout_constraintTop_toTopOf="@+id/batteryVoltageHd" />
+
+        <TextView
+            android:id="@+id/leftDistanceHd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Left Distance:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/verticalCut1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/verticalCut1" />
+
+        <TextView
+            android:id="@+id/leftDistanceTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="- cm"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/leftDistanceHd"
+            app:layout_constraintStart_toStartOf="@+id/leftDistanceHd"
+            app:layout_constraintTop_toBottomOf="@+id/leftDistanceHd" />
+
+        <TextView
+            android:id="@+id/rightDistanceTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="- cm"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/rightDistanceHd"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="@+id/rightDistanceHd"
+            app:layout_constraintTop_toBottomOf="@+id/rightDistanceHd" />
+
+        <TextView
+            android:id="@+id/rightDistanceHd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right Distance:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/verticalCut1"
+            app:layout_constraintTop_toTopOf="@+id/leftDistanceHd" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
