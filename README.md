@@ -1,5 +1,5 @@
 # CapstoneProjectCommunicationApp
-Android Studio kullanılarak tamamen kendim yazdığım telefon-mikrokontrolcü iletişim programı.
+Android Studio kullanılarak tamamen kendim yazdığım telefon-mikrodenetleyici iletişim programı.
 
 Üniversite bitirme projesi için modifiye ettim.
 
