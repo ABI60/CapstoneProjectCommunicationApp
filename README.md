@@ -1,7 +1,7 @@
 # CapstoneProjectCommunicationApp
 Android Studio kullanılarak tamamen kendim yazdığım telefon-mikrodenetleyici iletişim programı.
 
-Üniversite bitirme projesi için modifiye ettim.
+- Üniversite bitirme projesi için modifiye ettim.
 
 > Orijinal program link: https://github.com/ABI60/SerialCommunicationApp
 
