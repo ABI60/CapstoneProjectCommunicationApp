@@ -3,8 +3,7 @@ Android Studio kullanılarak tamamen kendim yazdığım telefon-mikrodenetleyici
 
 Üniversite bitirme projesi için modifiye ettim.
 
-> Orijinal program link:
-https://github.com/ABI60/SerialCommunicationApp
+> Orijinal program link: https://github.com/ABI60/SerialCommunicationApp
 
 # Program resimleri:
 <p float="left">
